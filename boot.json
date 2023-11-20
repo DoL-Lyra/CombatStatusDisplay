@@ -1,6 +1,6 @@
 {
     "name": "CombatStatusDisplay-Lyra",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "styleFileList": [
     ],
     "scriptFileList": [
@@ -24,14 +24,14 @@
             "passage": "Widgets State Man",
             "findString": "<<if $enemyanger gte $enemyangermax>>",
             "replaceFile": "assets/AP.twee",
-            "debug": true,
+            "debug": false,
             "all": false
           },
           {
             "passage": "Widgets State Man",
             "findString": "<<if $enemyarousal gte $enemyarousalmax>>",
             "replaceFile": "assets/HP.twee",
-            "debug": true,
+            "debug": false,
             "all": false
           }
         ]
