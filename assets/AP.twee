@@ -1,0 +1,18 @@
+
+			<<if $enemyarousal gte $enemyarousalmax>>
+				<span class="red">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal gte ($enemyarousalmax / 5) * 4>>
+				<span class="pink">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal gte ($enemyarousalmax / 5) * 3>>
+				<span class="purple">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal gte ($enemyarousalmax / 5) * 2>>
+				<span class="blue">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal gte ($enemyarousalmax / 5) * 1>>
+				<span class="lblue">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal gt 0>>
+				<span class="teal">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<<elseif $enemyarousal lte 0>>
+				<span class="green">(<<= Math.round($enemyarousal) >>/$enemyarousalmax)</span>
+			<</if>>
+
+            <<if $enemyanger gte $enemyangermax>>

@@ -1,0 +1,46 @@
+{
+    "name": "CombatStatusDisplay-Lyra",
+    "version": "1.0.0",
+    "styleFileList": [
+    ],
+    "scriptFileList": [
+    ],
+    "tweeFileList": [
+      "assets/HP.twee",
+      "assets/AP.twee"
+    ],
+    "imgFileList": [
+    ],
+    "additionFile": [
+        "README.md"
+    ],
+    "addonPlugin": [
+      {
+        "modName": "TweeReplacer",
+        "addonName": "TweeReplacerAddon",
+        "modVersion": "^1.2.0",
+        "params": [
+          {
+            "passage": "Widgets State Man",
+            "findString": "<<if $enemyanger gte $enemyangermax>>",
+            "replaceFile": "assets/AP.twee",
+            "debug": true,
+            "all": false
+          },
+          {
+            "passage": "Widgets State Man",
+            "findString": "<<if $enemyarousal gte $enemyarousalmax>>",
+            "replaceFile": "assets/HP.twee",
+            "debug": true,
+            "all": false
+          }
+        ]
+      }
+    ],
+    "dependenceInfo": [
+      {
+        "modName": "TweeReplacer",
+        "version": "^1.2.0"
+      }
+    ]
+  }
